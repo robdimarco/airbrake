@@ -149,7 +149,7 @@ ActiveRecord::Base.connection.create_table(:books) do |t|
   t.string(:title)
 end
 
-ActiveRecord::Migration.verbose = false
+# ActiveRecord::Migration.verbose = false
 require 'generators/delayed_job/templates/migration'
 ActiveRecord::Schema.define do
   CreateDelayedJobs.up
